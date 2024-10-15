@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.example.demo.vtalent.StudentDetails" id="maheshDetails1">
+
+		<constructor-arg value="DoraSriVignesh" />
+		<constructor-arg value="26" type="int" />
+
+
+		<constructor-arg ref="placement" />
+
+	</bean>
+
+	<bean class="com.example.demo.vtalent.StudentDetails" id="maheshDetails">
+
+
+		<property name="studentName" value="RakeshMandava" />
+		<property name="batchNo" value="26" />
+		<property name="placement" ref="placement" />
+
+	</bean>
+
+	<bean class="com.example.demo.vtalent.StudentPlacements" id="placement">
+
+
+	</bean>
+
+
+</beans>
